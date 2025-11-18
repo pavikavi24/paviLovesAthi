@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavi & Athi - A Tamil Love Story</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffebee, #fce4ec);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(45deg, #d81b60, #8e24aa);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #d81b60;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 4px #d81b60;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -10px;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #d81b60;
+            margin-bottom: 10px;
+        }
+
+        .family-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(45deg, #8e24aa, #d81b60);
+            color: white;
+            border-radius: 10px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .kavi-mithraa {
+            font-size: 2rem;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        .love-quote {
+            font-style: italic;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .heart-animation {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .heart {
+            display: inline-block;
+            font-size: 3rem;
+            color: #d81b60;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-content::after {
+                left: -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pavi & Athi</h1>
+            <p class="subtitle">A Tamil Love Story</p>
+        </header>
+
+        <div class="heart-animation">
+            <div class="heart">❤️</div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">The Beginning</div>
+                    <h3>Friendship Blossoms</h3>
+                    <p>Pavi and Athi were good friends who shared a special bond from the very beginning. Their friendship was built on trust, understanding, and mutual respect.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">A Deeper Connection</div>
+                    <h3>Friendship Turns to Love</h3>
+                    <p>As time passed, their friendship began to change into something more beautiful. They discovered feelings for each other that went beyond friendship.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">A New Chapter</div>
+                    <h3>The Wedding</h3>
+                    <p>Their love culminated in a beautiful Tamil wedding, where they promised to stand by each other through all of life's joys and challenges.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">The Ultimate Blessing</div>
+                    <h3>A New Addition</h3>
+                    <p>Their love was blessed with a beautiful daughter who became the living embodiment of their affection for each other.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="family-section">
+            <h2 class="family-title">Their Love Lives On</h2>
+            <p>Now their love is showing to the world in the name of their daughter</p>
+            <div class="kavi-mithraa">Kavi Mithraa</div>
+            <p class="love-quote">"The greatest happiness in life is the certainty that we are loved. Loved for ourselves, or rather, loved in spite of ourselves." - Victor Hugo</p>
+        </div>
+
+        <footer>
+            <p>Created with ❤️ to celebrate the beautiful love story of Pavi and Athi</p>
+        </footer>
+    </div>
+
+    <script>
+        // Timeline animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            function checkVisibility() {
+                timelineItems.forEach(item => {
+                    const itemTop = item.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (itemTop < windowHeight * 0.9) {
+                        item.classList.add('visible');
+                    }
+                });
+            }
+            
+            // Initial check
+            checkVisibility();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkVisibility);
+            
+            // Heart animation enhancement
+            const heart = document.querySelector('.heart');
+            setInterval(() => {
+                heart.style.color = `hsl(${Math.random() * 360}, 100%, 65%)`;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
